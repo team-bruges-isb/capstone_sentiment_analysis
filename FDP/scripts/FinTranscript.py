@@ -10,6 +10,10 @@ from pymongo.errors import ConnectionFailure
 from lxml import html
 import requests
 
+from bs4 import BeautifulSoup
+
+
+
 def connectToLocalMongoDB():
     mongoClient = MongoClient()
     
@@ -35,7 +39,29 @@ def getHtmlTreeFromURL(url):
         print("Error {} in making request to url {} ".format(e,url))
         return None
         
-    tree = html.fromstring(response.content)
-    return tree
+    return response.text
+    
+def populateTranscriptFromSeekingAlpha(url):
+    
+    mongoClient = connectToLocalMongoDB()
+    if mongoClient == None:
+        return False
+        
+    htmlContent = getHtmlTreeFromURL(url)
+    if htmlContent == None:
+        return False
+        
+    print("I have reached here")
+    soup = BeautifulSoup(htmlContent, "lxml")
+    
+    mytag = None
+    for tag in soup.find_all(itemprop="articleBody"):
+        mytag = tag
+        
+    print(mytag)
+    articlesoup = BeautifulSoup(mytag, "lxml")
+    #print(soup.div['id'])
+    
 
+populateTranscriptFromSeekingAlpha('http://seekingalpha.com/article/4016206-flex-flex-q2-2017-results-earnings-call-transcript?part=single')
     
