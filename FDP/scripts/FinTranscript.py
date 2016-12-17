@@ -12,7 +12,7 @@ import requests
 
 from bs4 import BeautifulSoup
 
-
+import re
 
 def connectToLocalMongoDB():
     mongoClient = MongoClient()
@@ -39,7 +39,7 @@ def getHtmlTreeFromURL(url):
         print("Error {} in making request to url {} ".format(e,url))
         return None
         
-    return response.text
+    return response.text 
     
 def populateTranscriptFromSeekingAlpha(url):
     
@@ -51,15 +51,37 @@ def populateTranscriptFromSeekingAlpha(url):
     if htmlContent == None:
         return False
         
-    print("I have reached here")
+    print("I have reached the soup preparation state")
     soup = BeautifulSoup(htmlContent, "lxml")
     
-    mytag = None
-    for tag in soup.find_all(itemprop="articleBody"):
-        mytag = tag
+    #mytag = None
+    #for tag in soup.find_all(itemprop="articleBody"):
+        #mytag = tag
         
-    print(mytag)
-    articlesoup = BeautifulSoup(mytag, "lxml")
+    ptagList = soup.find_all("p", class_=re.compile("p p*"))
+    
+    companyName = ptagList[0]
+    Quarter = ptagList[1]
+    Time = ptagList[2]
+
+    print(companyName.text)
+    print(Quarter.string)
+    print(Time.string)
+
+    print(len(ptagList))
+    
+    IntroList = []
+    QuestionList = []
+    AnswerList = []
+    for index in range(3, len(ptagList)):
+        isStrong = False
+        if ptagList[index].strong != None:
+            isStrong = True
+        
+        
+        
+        
+}
     #print(soup.div['id'])
     
 
