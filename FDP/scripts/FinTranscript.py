@@ -70,19 +70,50 @@ def populateTranscriptFromSeekingAlpha(url):
 
     print(len(ptagList))
     
+    answerString = ""
+    questionStarted = False;
+    answerStarted = False;
     IntroList = []
     QuestionList = []
     AnswerList = []
     for index in range(3, len(ptagList)):
+        
         isStrong = False
         if ptagList[index].strong != None:
             isStrong = True
+            
+        if isStrong == False:    
+            if questionStarted == True:
+                QuestionList.append(ptagList[index].text)
+                questionStarted = False;
+                continue
+            elif answerStarted == True:
+                answerString += str(ptagList[index].text)
+                continue
+            else:
+                IntroList.append(ptagList[index].text)
+
+        else:
+            if answerString != "":
+                AnswerList.append(answerString)
+                answerString = ""
+                answerStarted = False
+                questionStarted = False
         
-        
-        
-        
-}
-    #print(soup.div['id'])
+            if str(ptagList[index]).find("\"question\"") != -1:
+                questionStarted = True
+                answerStarted = False  
+            elif str(ptagList[index]).find("\"answer\"") != -1:
+                answerStarted = True
+                questionStarted = False
+                
+    print(len(QuestionList))
+    print(len(AnswerList))
+    print(len(IntroList))
+    
+    
+    
+    print(IntroList)
     
 
 populateTranscriptFromSeekingAlpha('http://seekingalpha.com/article/4016206-flex-flex-q2-2017-results-earnings-call-transcript?part=single')
