@@ -11,6 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import sys
 
 def connectToLocalMongoDB():
     mongoClient = MongoClient()
@@ -40,9 +41,10 @@ def getHtmlTreeFromURL(url):
     return response.text
     
     
-def addToMongoDB(mongoClient, companyName, companyType, quarter, time, introList, questionList, answerList, summaryList):
+def addToMongoDB(mongoClient, url, companyName, companyType, quarter, time, introList, questionList, answerList, summaryList):
         
     documentMap = {}
+    documentMap['URL'] = url
     documentMap['companyName'] = companyName
     documentMap['quarter'] = quarter
     documentMap['time'] = time
@@ -194,9 +196,25 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     #print(" ".join(SummaryList))
     
     #push toMongoDB
-    return addToMongoDB(mongoClient, companyName.text, companyType, Quarter.string, Time.string, IntroList, QuestionList, AnswerList, SummaryList)
+    return addToMongoDB(mongoClient, url, companyName.text, companyType, Quarter.string, Time.string, IntroList, QuestionList, AnswerList, SummaryList)
     
 
-populateTranscriptFromSeekingAlpha('http://seekingalpha.com/article/4030878-adobe-systems-adbe-ceo-shantanu-narayen-q4-2016-results-earnings-call-transcript?part=single', 
-                                   "competitor")
+printUsage = False
+if len(sys.argv) != 3:
+    print("No. of arguments are not sufficient. ")
+    printUsage = True
+else:
+    URL = sys.argv[1]
+    companyType = sys.argv[2]
+    if populateTranscriptFromSeekingAlpha(URL, companyType) == True:
+        print("Document added successfully")
+    else:
+        print("Failed to add the document")
+
+if len(sys.argv) > 1 and (sys.argv[1] == "--help" or sys.argv[1] == "-help"):
+    printUsage = True
     
+if printUsage:
+    print("How to Use: ")
+    print("python FinTranscript.py <seekingalpha URL> <self|competitor|customer|supplier)")
+  
