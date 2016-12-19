@@ -20,3 +20,19 @@ def connectToLocalMongoDB():
         print("MongoDB Server not available")
         return None
         
+def getDataFromMongoDB():
+    
+    mongoClient = MongoClient()
+    
+    db = mongoClient.documents
+    
+    allTranscripts = db.transcripts.find()
+    
+    print("Total Count = " + str(allTranscripts.count()))
+    for document in allTranscripts:
+        print(document)
+        
+
+        
+getDataFromMongoDB()
+    
