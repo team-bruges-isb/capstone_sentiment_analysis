@@ -1,0 +1,49 @@
+NOK,Nokia,Customer
+BRCD,"Brocade Communications Systems, Inc. ",Customer
+CSCO,"Cisco Systems, Inc. ",Customer
+ENPH,"Enphase Energy, Inc. ",Customer
+EXTR,Extreme Networks Inc. ,Customer
+FEYE,"FireEye, Inc. ",Customer
+FIT,Fitbit Inc. ,Customer
+F,Ford Motor Co. ,Customer
+HPQ,HP Inc. ,Customer
+JNPR,"Juniper Networks, Inc. ",Customer
+LNVGF,Lenovo Group Limited ,Customer
+MSFT,Microsoft Corporation ,Customer
+MSI,"Motorola Solutions, Inc. ",Customer
+NTGR,Netgear Inc. ,Customer
+NKE,"NIKE, Inc. ",Customer
+NMBL,"Nimble Storage, Inc. ",Customer
+SEDG,"SolarEdge Technologies, Inc. ",Customer
+SPWR,SunPower Corporation,Customer
+TDC,Teradata Corporation ,Customer
+TRMB,Trimble Inc. ,Customer
+BSX,Boston scientificÿ,Customer
+TMO,ThermoFischerÿ,Customer
+SUNEQ,SunEdison,Customer
+BOX,"Box, Inc. ",Suppliers
+CSOD,"Cornerstone OnDemand, Inc. ",Suppliers
+DAIO,Data I/O Corp. ,Suppliers
+DAR,Datron AG ,Suppliers
+DIOD,Diodes Incorporated ,Suppliers
+NPO,"EnPro Industries, Inc. ",Suppliers
+GSIT,GSI Technology Inc. ,Suppliers
+KEM,KEMET Corp. ,Suppliers
+LFUS,Littelfuse Inc. ,Suppliers
+MXIM,"Maxim Integrated Products, Inc. ",Suppliers
+MMTIF,Micromem Technologies Inc. ,Suppliers
+ON,ON Semiconductor Corp. ,Suppliers
+SIGM,"Sigma Designs, Inc. ",Suppliers
+TTMI,TTM Technologies Inc. ,Suppliers
+HNHAF,"Hon Hai Precision Industry Co., Ltd. ",Competitors
+JBL,Jabil Circuit Inc. ,Competitors
+SANM,Sanmina Corporation ,Competitors
+CLS,Celestica Inc. ,Competitors
+CCET,Cal-Comp Electronics  Public Company Limited ,Competitors
+PLXS,Plexus Corp. ,Competitors
+BHE,Benchmark Electronics Inc. ,Competitors
+KE,"Kimball Electronics, Inc. ",Competitors
+SGMA,SigmaTron International Inc. ,Competitors
+MDT,Medtronics,Competitors
+TSLA,Tesla,Competitors
+SCTY,Solar City,Competitors
