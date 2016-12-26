@@ -54,7 +54,8 @@ def findTranscripts(csvFileWithSymbols):
             continue;
 
         for tag in taglist:
-            print(tag.a["href"])
+            if (tag.a["href"]).find("earning") != -1 and (tag.a["href"]).find("transcript") != -1: 
+                print(tag.a["href"])
         
     csvFile.close()
     
