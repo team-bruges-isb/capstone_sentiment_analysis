@@ -29,8 +29,8 @@ def getDataFromMongoDB():
     allTranscripts = db.transcripts.find()
     
     print("Total Count = " + str(allTranscripts.count()))
-    for document in allTranscripts:
-        print(document)
+    #for document in allTranscripts:
+     #   print(document)
         
 
         

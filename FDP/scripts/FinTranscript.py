@@ -29,7 +29,7 @@ def connectToLocalMongoDB():
 
 def getHtmlTreeFromURL(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, headers={"Upgrade-Insecure-Requests":"1", "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"})
         if not response.status_code / 100 == 2:
             print("Error: Unexpected http response {}".format(response))
             return None     
@@ -89,6 +89,7 @@ def addToMongoDB(mongoClient, url, companyName, companyType, quarter, time, intr
     except Exception as e:
         print("Failed to add Document to mongodb, some expcetion occcured in insertion.")
         
+    mongoClient.close()
     return retValue
     
     
@@ -198,7 +199,7 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     #push toMongoDB
     return addToMongoDB(mongoClient, url, companyName.text, companyType, Quarter.string, Time.string, IntroList, QuestionList, AnswerList, SummaryList)
     
-
+'''
 printUsage = False
 if len(sys.argv) != 3:
     print("No. of arguments are not sufficient. ")
@@ -217,4 +218,4 @@ if len(sys.argv) > 1 and (sys.argv[1] == "--help" or sys.argv[1] == "-help"):
 if printUsage:
     print("How to Use: ")
     print("python FinTranscript.py <seekingalpha URL> <self|competitor|customer|supplier)")
-  
+'''

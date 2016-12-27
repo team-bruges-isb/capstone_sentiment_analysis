@@ -17,7 +17,7 @@ import subprocess
 def getHtmlTreeFromURL(url):
     print(url)
     try:
-        response = requests.get(url, headers={"content-type":"text/html,application/xhtml+xml,application/xml,image/webp", "Upgrade-Insecure-Requests":"1"})
+        response = requests.get(url, headers={"Upgrade-Insecure-Requests":"1", "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"})
         if not response.status_code / 100 == 2:
             print("Error: Unexpected http response {}".format(response))
             return None     
