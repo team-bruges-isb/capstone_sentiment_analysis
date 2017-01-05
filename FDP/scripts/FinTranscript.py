@@ -103,7 +103,7 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     if htmlContent == None:
         return False
         
-    print("I have reached the soup preparation state")
+    #print("I have reached the soup preparation state")
     soup = BeautifulSoup(htmlContent, "lxml")
     
     #mytag = None
@@ -112,13 +112,38 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
         
     ptagList = soup.find_all("p", class_=re.compile("p p*"))
     
-    companyName = ptagList[0]
-    Quarter = ptagList[1]
-    Time = ptagList[2]
+    startIndex = 0
+    for index in range(0, len(ptagList)):
+        isStrong = False
+        if ptagList[index].strong != None:
+            isStrong = True
+            startIndex = index
+            break
+    
+    if startIndex == 5:
+        startIndex = 2
+        companyName = ptagList[startIndex + 0].text
+        Quarter = ptagList[startIndex + 1].string
+        Time = ptagList[startIndex + 2].string
+    elif startIndex == 3:
+        startIndex = 0
+        companyName = ptagList[startIndex + 0].text
+        Quarter = ptagList[startIndex + 1].string
+        Time = ptagList[startIndex + 2].string
+    elif startIndex == 1:
+        cbindex = ptagList[0].text.find(')')
+        companyName = ptagList[0].text[:cbindex+1]
+        clIndex = ptagList[0].text.find('Call')
+        Quarter = ptagList[0].text[cbindex+2:clIndex+4]
+        Time = ptagList[0].text[clIndex+5:]
+    else:
+        print("Sorry I do not understand this shit : " + url)
+        return False
+        
 
-    print(companyName.text)
-    print(Quarter.string)
-    print(Time.string)
+    print(companyName)
+    print(Quarter)
+    print(Time)
 
     print(len(ptagList))
     
@@ -134,7 +159,7 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     AnswerList = []
     SummaryList = []
     
-    for index in range(3, len(ptagList)):
+    for index in range(startIndex + 3, len(ptagList)):
         
         isStrong = False
         if ptagList[index].strong != None:
@@ -185,6 +210,7 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     print(len(QuestionList))
     print(len(AnswerList))
     print(len(IntroList))
+    print(len(SummaryList))
     
     #print(" ".join(IntroList))
     
@@ -197,7 +223,8 @@ def populateTranscriptFromSeekingAlpha(url, companyType):
     #print(" ".join(SummaryList))
     
     #push toMongoDB
-    return addToMongoDB(mongoClient, url, companyName.text, companyType, Quarter.string, Time.string, IntroList, QuestionList, AnswerList, SummaryList)
+    #return True
+    return addToMongoDB(mongoClient, url, companyName, companyType, Quarter, Time, IntroList, QuestionList, AnswerList, SummaryList)
     
 '''
 printUsage = False
