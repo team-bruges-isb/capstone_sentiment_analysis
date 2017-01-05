@@ -9,6 +9,7 @@ from FinTranscript import *
 import sys
 import csv
 import subprocess
+import time
 
 def collectTranscripts():
     
@@ -26,7 +27,7 @@ def collectTranscripts():
 
         count = count + 1
         completeUrl = "http://www.seekingalpha.com" + partialUrl + "?part=single"
-        
+        time.sleep(2)
         result = populateTranscriptFromSeekingAlpha(completeUrl, "competitor")
         if result == False:
             print("Failed to Add Url: " + completeUrl)
