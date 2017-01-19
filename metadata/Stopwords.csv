@@ -1,0 +1,586 @@
+A,Generic
+ABOUT ,Generic
+ABOVE,Generic
+ACROSS,Generic
+AFOREMENTIONED,Generic
+AFORESAID,Generic
+AFTER,Generic
+AFTERWARDS,Generic
+AGAIN,Generic
+AGAINST,Generic
+ALL,Generic
+ALMOST,Generic
+ALONE,Generic
+ALONG,Generic
+ALREADY,Generic
+ALSO,Generic
+ALTHOUGH,Generic
+ALWAYS,Generic
+AMONG,Generic
+AMONGST,Generic
+AN,Generic
+AND,Generic
+ANOTHER,Generic
+ANY,Generic
+ANYHOW,Generic
+ANYONE,Generic
+ANYTHING,Generic
+ANYWHERE,Generic
+ARE,Generic
+AROUND,Generic
+AS,Generic
+AT,Generic
+BE,Generic
+BECAME,Generic
+BECAUSE,Generic
+BECOME,Generic
+BECOMES,Generic
+BECOMING,Generic
+BEEN,Generic
+BEFORE,Generic
+BEFOREHAND,Generic
+BEHIND,Generic
+BEING,Generic
+BELOW,Generic
+BESIDE,Generic
+BESIDES,Generic
+BETWEEN,Generic
+BEYOND,Generic
+BOTH,Generic
+BUT,Generic
+BY,Generic
+CAN,Generic
+CANNOT,Generic
+CO,Generic
+COULD,Generic
+DID,Generic
+DO,Generic
+DOES,Generic
+DOWN,Generic
+DURING,Generic
+EACH,Generic
+EG,Generic
+EITHER,Generic
+ELSE,Generic
+ELSEWHERE,Generic
+ENOUGH,Generic
+ETC,Generic
+EVEN,Generic
+EVER,Generic
+EVERY,Generic
+EVERYONE,Generic
+EVERYTHING,Generic
+EVERYWHERE,Generic
+EXCEPT,Generic
+FEW,Generic
+FIRST,Generic
+FOR,Generic
+FORMER,Generic
+FORMERLY,Generic
+FORTHWITH,Generic
+FROM,Generic
+FURTHER,Generic
+FURTHERANCE,Generic
+HAD,Generic
+HAS,Generic
+HAVE,Generic
+HAVING,Generic
+HE,Generic
+HENCE,Generic
+HER,Generic
+HERE,Generic
+HEREAFTER,Generic
+HEREBY,Generic
+HEREIN,Generic
+HEREINAFTER,Generic
+HEREOF,Generic
+HERETO,Generic
+HERETOFORE,Generic
+HEREUNDER,Generic
+HEREUNTO,Generic
+HEREUPON,Generic
+HEREWITH,Generic
+HERS,Generic
+HERSELF,Generic
+HIM,Generic
+HIMSELF,Generic
+HIS,Generic
+HOW,Generic
+HOWEVER,Generic
+I,Generic
+IE,Generic
+IF,Generic
+IN,Generic
+INC,Generic
+INDEED,Generic
+INSOFAR,Generic
+INTO,Generic
+IS,Generic
+IT,Generic
+ITS,Generic
+ITSELF,Generic
+LAST,Generic
+LATTER,Generic
+LATTERLY,Generic
+LEAST,Generic
+LESS,Generic
+LIKEWISE,Generic
+LTD,Generic
+MANY,Generic
+MAY,Generic
+ME,Generic
+MEANWHILE,Generic
+MIGHT,Generic
+MORE,Generic
+MOREOVER,Generic
+MOST,Generic
+MOSTLY,Generic
+MUCH,Generic
+MUST,Generic
+MY,Generic
+MYSELF,Generic
+NAMELY,Generic
+NEITHER,Generic
+NEVER,Generic
+NEVERTHELESS,Generic
+NEXT,Generic
+NO,Generic
+NOBODY,Generic
+NONE,Generic
+NOR,Generic
+NOT,Generic
+NOTHING,Generic
+NOW,Generic
+NOWHERE,Generic
+OF,Generic
+OFF,Generic
+OFTEN,Generic
+ONE,Generic
+ONLY,Generic
+ONTO,Generic
+OR,Generic
+OTHER,Generic
+OTHERS,Generic
+OTHERWISE,Generic
+OUR,Generic
+OURS,Generic
+OURSELVES,Generic
+OUT,Generic
+OVER,Generic
+OWN,Generic
+PER,Generic
+PERHAPS,Generic
+RATHER,Generic
+SAME,Generic
+SEEM,Generic
+SEEMED,Generic
+SEEMING,Generic
+SEEMS,Generic
+SEVERAL,Generic
+SHALL,Generic
+SHE,Generic
+SHOULD,Generic
+SINCE,Generic
+SO,Generic
+SOME,Generic
+SOMEHOW,Generic
+SOMEONE,Generic
+SOMETHING,Generic
+SOMETIME,Generic
+SOMETIMES,Generic
+SOMEWHERE,Generic
+STILL,Generic
+SUCH,Generic
+THAN,Generic
+THAT,Generic
+THE,Generic
+THEIR,Generic
+THEM,Generic
+THEMSELVES,Generic
+THEN,Generic
+THENCE,Generic
+THERE,Generic
+THEREAFTER,Generic
+THEREBY,Generic
+THEREFOR,Generic
+THEREFORE,Generic
+THEREFROM,Generic
+THEREIN,Generic
+THEREOF,Generic
+THEREON,Generic
+THERETO,Generic
+THERETOFORE,Generic
+THEREUNDER,Generic
+THEREUNTO,Generic
+THEREUPON,Generic
+THEREWITH,Generic
+THESE,Generic
+THEY,Generic
+THING,Generic
+THIS,Generic
+THOSE,Generic
+THOUGH,Generic
+THROUGH,Generic
+THROUGHOUT,Generic
+THRU,Generic
+THUS,Generic
+TO,Generic
+TOGETHER,Generic
+TOO,Generic
+TOWARD,Generic
+TOWARDS,Generic
+UNDER,Generic
+UNTIL,Generic
+UP,Generic
+UPON,Generic
+US,Generic
+VERY,Generic
+VIA,Generic
+WAS,Generic
+WE,Generic
+WELL,Generic
+WERE,Generic
+WHAT,Generic
+WHATEVER,Generic
+WHATSOEVER,Generic
+WHEN,Generic
+WHENCE,Generic
+WHENEVER,Generic
+WHERE,Generic
+WHEREAFTER,Generic
+WHEREAS,Generic
+WHEREBY,Generic
+WHEREIN,Generic
+WHEREOF,Generic
+WHEREUPON,Generic
+WHEREVER,Generic
+WHETHER,Generic
+WHITHER,Generic
+WHICH,Generic
+WHICHEVER,Generic
+WHILE,Generic
+WHO,Generic
+WHOEVER,Generic
+WHOLE,Generic
+WHOM,Generic
+WHOSE,Generic
+WHY,Generic
+WILL,Generic
+WITH,Generic
+WITHIN,Generic
+WITHOUT,Generic
+WOULD,Generic
+YET,Generic
+YOU,Generic
+YOUR,Generic
+YOURS,Generic
+YOURSELF,Generic
+YOURSELVES,Generic
+HUNDRED,Dates and Numbers
+THOUSAND,Dates and Numbers
+MILLION,Dates and Numbers
+BILLION,Dates and Numbers
+TRILLION,Dates and Numbers
+DATE,Dates and Numbers
+ANNUAL,Dates and Numbers
+ANNUALLY,Dates and Numbers
+ANNUM,Dates and Numbers
+YEAR,Dates and Numbers
+YEARLY,Dates and Numbers
+QUARTER,Dates and Numbers
+QUARTERLY,Dates and Numbers
+QTR,Dates and Numbers
+MONTH,Dates and Numbers
+MONTHLY,Dates and Numbers
+WEEK,Dates and Numbers
+WEEKLY,Dates and Numbers
+DAY,Dates and Numbers
+DAILY,Dates and Numbers
+JANUARY,Dates and Numbers
+FEBRUARY,Dates and Numbers
+MARCH,Dates and Numbers
+APRIL,Dates and Numbers
+MAY,Dates and Numbers
+JUNE,Dates and Numbers
+JULY,Dates and Numbers
+AUGUST,Dates and Numbers
+SEPTEMBER,Dates and Numbers
+OCTOBER,Dates and Numbers
+NOVEMBER,Dates and Numbers
+DECEMBER,Dates and Numbers
+JAN,Dates and Numbers
+FEB,Dates and Numbers
+MAR,Dates and Numbers
+APR,Dates and Numbers
+MAY,Dates and Numbers
+JUN,Dates and Numbers
+JUL,Dates and Numbers
+AUG,Dates and Numbers
+SEP,Dates and Numbers
+SEPT,Dates and Numbers
+OCT,Dates and Numbers
+NOV,Dates and Numbers
+DEC,Dates and Numbers
+MONDAY,Dates and Numbers
+TUESDAY,Dates and Numbers
+WEDNESDAY,Dates and Numbers
+THURSDAY,Dates and Numbers
+FRIDAY,Dates and Numbers
+SATURDAY,Dates and Numbers
+SUNDAY,Dates and Numbers
+ONE,Dates and Numbers
+TWO,Dates and Numbers
+THREE,Dates and Numbers
+FOUR,Dates and Numbers
+FIVE,Dates and Numbers
+SIX,Dates and Numbers
+SEVEN,Dates and Numbers
+EIGHT,Dates and Numbers
+NINE,Dates and Numbers
+TEN,Dates and Numbers
+ELEVEN,Dates and Numbers
+TWELVE,Dates and Numbers
+THIRTEEN,Dates and Numbers
+FOURTEEN,Dates and Numbers
+FIFTEEN,Dates and Numbers
+SIXTEEN,Dates and Numbers
+SEVENTEEN,Dates and Numbers
+EIGHTEEN,Dates and Numbers
+NINETEEN,Dates and Numbers
+TWENTY,Dates and Numbers
+THIRTY,Dates and Numbers
+FORTY,Dates and Numbers
+FIFTY,Dates and Numbers
+SIXTY,Dates and Numbers
+SEVENTY,Dates and Numbers
+EIGHTY,Dates and Numbers
+NINETY,Dates and Numbers
+FIRST,Dates and Numbers
+SECOND,Dates and Numbers
+THIRD,Dates and Numbers
+FOURTH,Dates and Numbers
+FIFTH,Dates and Numbers
+SIXTH,Dates and Numbers
+SEVENTH,Dates and Numbers
+EIGHTH,Dates and Numbers
+NINTH,Dates and Numbers
+TENTH,Dates and Numbers
+I,Dates and Numbers
+II,Dates and Numbers
+III,Dates and Numbers
+IV,Dates and Numbers
+V,Dates and Numbers
+VI,Dates and Numbers
+VII,Dates and Numbers
+VIII,Dates and Numbers
+IX,Dates and Numbers
+X,Dates and Numbers
+XI,Dates and Numbers
+XII,Dates and Numbers
+XIII,Dates and Numbers
+XIV,Dates and Numbers
+XV,Dates and Numbers
+XVI,Dates and Numbers
+XVII,Dates and Numbers
+XVIII,Dates and Numbers
+XIX,Dates and Numbers
+XX,Dates and Numbers
+UNITED,Countries
+STATE,Countries
+NORTH,Countries
+SOUTH,Countries
+EAST,Countries
+NORTHEAST,Countries
+NORTHWEST,Countries
+SOUTHEAST,Countries
+SOUTHWEST,Countries
+WEST,Countries
+OCEAN,Countries
+SEA,Countries
+LAKE,Countries
+RIVER,Countries
+CREEK,Countries
+GULF,Countries
+MOUNTAIN,Countries
+STREET,Countries
+BOULEVARD,Countries
+BLVD,Countries
+PARKWAY,Countries
+CITY,Countries
+COUNTY,Countries
+COUNTRY,Countries
+PACIFIC,Countries
+ATLANTIC,Countries
+INDIAN,Countries
+MEDITERRANEAN,Countries
+COMMONWEALTH,Countries
+AMERICA,Countries
+AMERICAN,Countries
+YORK,Countries
+CHICAGO,Countries
+LAS,Countries
+VEGAS,Countries
+LOS,Countries
+ANGELES,Countries
+MILWAUKEE,Countries
+SUNNYVALE,Countries
+FREMONT,Countries
+CINCINNATI,Countries
+PHILADELPHIA,Countries
+MIAMI,Countries
+DALLAS,Countries
+FORT,Countries
+BOSTON,Countries
+HOUSTON,Countries
+WASHINGTON,Countries
+ATLANTA,Countries
+DETROIT,Countries
+SAN,Countries
+FRANSICO,Countries
+PHOENIX,Countries
+SEATTLE,Countries
+DIEGO,Countries
+MINNEAPOLIS,Countries
+MEMPHIS,Countries
+DENVER,Countries
+ST,Countries
+LOUIS,Countries
+PITTSBURGH,Countries
+MANHATTAN,Countries
+HOLLYWOOD,Countries
+COLUMBUS,Countries
+INDIANAPOLIS,Countries
+MUMBAI,Countries
+KARACHI,Countries
+ONTARIO,Countries
+TORONTO,Countries
+CAMBRIDGE,Countries
+DELHI,Countries
+SAO,Countries
+PAULO,Countries
+SHANGHAI,Countries
+MOSCOW,Countries
+SEOUL,Countries
+ISTANBUL,Countries
+TOKYO,Countries
+JAKARTA,Countries
+BEIJING,Countries
+LONDON,Countries
+LUXEMBOURG,Countries
+SINGAPORE,Countries
+REPUBLIC,Countries
+CHINA,Countries
+INDIA,Countries
+INDONESIA,Countries
+BRAZIL,Countries
+BRAZILIAN,Countries
+PAKISTAN,Countries
+BANGLADESH,Countries
+RUSSIA,Countries
+NIGERIA,Countries
+NOVA,Countries
+SCOTIA,Countries
+JAPAN,Countries
+MALAYSIA,Countries
+MEXICO,Countries
+MEXICAN,Countries
+PHILIPPINES,Countries
+VIETNAM,Countries
+GERMANY,Countries
+FRANCE,Countries
+KOREA,Countries
+SPAIN,Countries
+ARGENTINA,Countries
+BERMUDA,Countries
+COLUMBIA,Countries
+PUERTO,Countries
+CANADA,Countries
+CANADIAN,Countries
+AFRICA,Countries
+AFRICAN,Countries
+CHILE,Countries
+CHILEAN,Countries
+EUROPE,Countries
+EUROPEAN,Countries
+USA,Countries
+ITALY,Countries
+ITALIAN,Countries
+AUSTRALIA,Countries
+NETHERLANDS,Countries
+NORWAY,Countries
+PORTUGAL,Countries
+TAIWAN,Countries
+ARGENTINA,Countries
+SWITZERLAND,Countries
+SWISS,Countries
+SUISSE,Countries
+DENMARK,Countries
+CZECK,Countries
+HUNGARY,Countries
+FINLAND,Countries
+SCOTLAND,Countries
+COSTA,Countries
+RICA,Countries
+SWEDEN,Countries
+BELGIUM,Countries
+AUSTRIA,Countries
+TURKEY,Countries
+POLAND,Countries
+INDONESIA,Countries
+THAILAND,Countries
+VENEZUELA,Countries
+ASIA,Countries
+ZEALAND,Countries
+JAPANESE,Countries
+LATIN,Countries
+BRITISH,Countries
+CHINESE,Countries
+ALABAMA ,Countries
+ALASKA,Countries
+ARIZONA,Countries
+ARKANSAS,Countries
+CALIFORNIA,Countries
+COLORADO,Countries
+CONNECTICUT,Countries
+DELAWARE,Countries
+FLORIDA,Countries
+GEORGIA,Countries
+HAWAII,Countries
+IDAHO,Countries
+ILLINOIS,Countries
+INDIANA,Countries
+IOWA,Countries
+KANSAS,Countries
+KENTUCKY,Countries
+LOUISIANA,Countries
+MAINE,Countries
+MARYLAND,Countries
+MASSACHUSETTS,Countries
+MICHIGAN,Countries
+MINNESOTA,Countries
+MISSISSIPPI,Countries
+MISSOURI,Countries
+MONTANA,Countries
+NEBRASKA,Countries
+NEVADA,Countries
+HAMPSHIRE,Countries
+JERSEY,Countries
+MEXICO,Countries
+NEW,Countries
+YORK,Countries
+OHIO,Countries
+OKLAHOMA,Countries
+OREGON,Countries
+PENNSYLVANIA,Countries
+RHODE,Countries
+ISLAND,Countries
+CAROLINA,Countries
+DAKOTA,Countries
+TENNESSEE,Countries
+TEXAS,Countries
+UTAH,Countries
+VERMONT,Countries
+VIRGINIA,Countries
+WASHINGTON,Countries
+WISCONSIN,Countries
+WYOMING,Countries
